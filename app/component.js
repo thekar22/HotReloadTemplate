@@ -1,1 +1,1 @@
-console.log('something workss');
+console.log('component.js');

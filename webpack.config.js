@@ -29,5 +29,5 @@ module.exports = {
 		},
 		]
 	},
-  devServer: { inline: true }
+	devServer: { inline: true }
 };

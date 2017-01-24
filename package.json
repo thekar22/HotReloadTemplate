@@ -3,24 +3,28 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --content-base build/ --inline --hot",
-    "babel": "babel"
+    "watch:dev": "webpack-dev-server --content-base build/ --inline --hot",
+    "watch:scraper": "babel --presets es2015,stage-0 import --out-dir import_out --watch -s"
   },
   "repository": {},
   "license": "MIT",
   "dependencies": {
-    "raw-loader": "^0.5.1",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
+    "request": "^2.79.0",
+    "scrape-it": "^3.2.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.22.2",
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
     "babel-polyfill": "^6.22.0",
     "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
     "css-loader": "^0.26.1",
     "node-sass": "^4.3.0",
+    "raw-loader": "^0.5.1",
     "sass-loader": "^4.1.1",
-    "style-loader": "^0.13.1"
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   }
 }
